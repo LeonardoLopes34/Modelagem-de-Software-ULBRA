@@ -31,7 +31,7 @@ namespace apiAula14.Controllers
             return livro is null ? NotFound() : Ok(livro);
         }
 
-        [HttpPost]
+        [HttpDelete]
         public ActionResult<Livro> Delete(Livro livro)
         {
             var livroRemovido = _livroService.Delete(livro);
